@@ -12,17 +12,25 @@ const router = createBrowserRouter([
 		errorElement: <ErrorScreen />,
 		children: [
 			{
+				path: "",
+				element: <h1>Nothing to show yet</h1>,
+			},
+			{
 				path: "library",
 				element: <LibraryScreen />,
+				children: [
+					{
+						path: ":wordId",
+						element: <h1>Showing the element</h1>,
+					},
+				],
 			},
 		],
 	},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-	<React.StrictMode>
-		<ChakraProvider>
-			<RouterProvider router={router} />
-		</ChakraProvider>
-	</React.StrictMode>
+	<ChakraProvider>
+		<RouterProvider router={router} />
+	</ChakraProvider>
 );
