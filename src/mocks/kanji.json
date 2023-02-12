@@ -1,0 +1,21 @@
+{
+	"kanjis": [
+		{
+			"kanjiSymbol": "冬",
+			"meanings": [
+				{
+					"readingType": "くん",
+					"reading": "ふゆ",
+					"example": "ふゆ",
+					"meaning": "Winter"
+				},
+				{
+					"readingType": "おん",
+					"reading": "トオ",
+					"example": "しゅんかしゅとう",
+					"meaning": "(All) Seasons"
+				}
+			]
+		}
+	]
+}

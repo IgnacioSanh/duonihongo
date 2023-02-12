@@ -1,12 +1,11 @@
 import { useLocation } from "react-router-dom";
-import { Flex, Box, Text, Center } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import SidebarButton from "./components/SidebarButton";
 
 export default function Sidebar() {
-	const location = useLocation();
-	console.log("current location: ", location);
 	return (
 		<Flex
+			display={{ base: "none", md: "flex" }}
 			h="full"
 			w="10rem"
 			justifyContent="flex-start"
